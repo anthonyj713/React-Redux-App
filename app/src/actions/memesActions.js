@@ -4,13 +4,12 @@ export const fetchMeme = () => {
     return dispatch => {
         dispatch({ type: 'FETCH_MEME_START'});
             axios
-                .get('https://www.tronalddump.io/random/meme')
-                
+                .get('https://www.tronalddump.io/random/quote')
                 .then(res => {
-                    console.log('res', res.headers)
+                    console.log('res', res.data.value)
                     dispatch({ 
                         type: 'FETCH_MEME_SUCCESS', 
-                        payload: res.headers});
+                        payload: res.data.value});
                 })
                 .catch(err => console.log('err', err))
     }

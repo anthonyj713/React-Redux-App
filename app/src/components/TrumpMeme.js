@@ -16,7 +16,7 @@ const TrumpMeme = props => {
           )}
           {props.meme && <h2>"{props.meme}"</h2>}
           {props.error && <p className="error">{props.error}</p>}
-          <button onClick={props.fetchMeme}>Random Trump Meme</button>
+          <button onClick={props.fetchMeme}>Get Trump Quote</button>
         </div>
       );
     };
