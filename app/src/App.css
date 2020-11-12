@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+.App {
+  text-align: center;
+}
+
+h1{
+  font-size: 6rem;
+  color: #C7622B;
+  font-family: 'Libre Baskerville', serif;
+}
+
+h2{
+  font-size: 3rem;
+  color: blue;
+}
+button{
+  background-color:red;
+  color: white;
+  font-size: 2rem;
+}
